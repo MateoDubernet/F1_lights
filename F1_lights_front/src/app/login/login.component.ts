@@ -26,7 +26,9 @@ export class LoginComponent {
     this.loginForm.markAllAsTouched();
     if(!this.loginForm.valid) return;
 
-    this.authService.login(this.loginForm.value)
+    this.authService.login(this.loginForm.value).subscribe((data) => {
+      console.log(data);
+    })
   }
 
   public goTo(path: string){

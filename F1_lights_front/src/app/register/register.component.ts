@@ -14,7 +14,7 @@ export class RegisterComponent {
   public setFormGroup = (dataItem: Register) => new FormGroup({
     'username': new FormControl(dataItem.username, Validators.required),
     'password': new FormControl(dataItem.pwd, Validators.required),
-    'verifPwd': new FormControl(dataItem.verifPwd, Validators.required),
+    // 'verifPwd': new FormControl(dataItem.verifPwd, Validators.required),
   });
 
   public registerForm: FormGroup;
@@ -27,7 +27,9 @@ export class RegisterComponent {
     this.registerForm.markAllAsTouched();
     if(!this.registerForm.valid) return;
 
-    this.authService.register(this.registerForm.value)
+    this.authService.register(this.registerForm.value).subscribe((data) => {
+      console.log(data);
+    })
   }
 
   public goTo(path: string){
