@@ -1,9 +1,9 @@
 <form [formGroup]="loginForm">
 
-    <label for="userNameOrEmail"></label>
+    <label for="userNameOrEmail">Login</label>
     <input #userNameOrEmail type="userNameOrEmail" formControlName="userNameOrEmail">
 
-    <label for="password"></label>
+    <label for="password">Password</label>
     <input #password type="password" formControlName="password">
 
     <button (click)="login()">Valider</button>
