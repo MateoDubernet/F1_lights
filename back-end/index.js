@@ -6,11 +6,9 @@ const bcrypt = require("bcrypt");
 const db = require("./database"); // Importez le fichier de connexion
 
 const app = express();
-app.use(cors());
 app.use(
   cors({
-    origin: "*", // Autorise uniquement les requêtes de ce domaine
-    methods: ["GET", "POST", "PUT", "DELETE"], // Autorise uniquement les méthodes GET et POST
+    origin: "*",
   })
 );
 app.use(express.urlencoded({ extended: true }));
@@ -80,6 +78,35 @@ app.post("/login", async (req, res) => {
       } else {
         return res.status(404).send("Utilisateur non trouvé");
       }
+    }
+  );
+});
+
+app.patch("/updateScore", (req, res) => {
+  const { userId, bestScore } = req.body;
+
+  // Vérifiez si les données nécessaires sont fournies
+  if (!userId || bestScore === undefined) {
+    return res
+      .status(400)
+      .send("L'identifiant de l'utilisateur et le meilleur score sont requis");
+  }
+
+  // Mise à jour du meilleur score de l'utilisateur dans la base de données
+  db.query(
+    "UPDATE users SET best_score = ? WHERE id = ?",
+    [bestScore, userId],
+    (err, results) => {
+      if (err) {
+        console.error(err);
+        return res.status(500).send("Erreur lors de la mise à jour du score");
+      }
+
+      if (results.affectedRows === 0) {
+        return res.status(404).send("Utilisateur non trouvé");
+      }
+
+      res.status(200).send("Meilleur score mis à jour avec succès");
     }
   );
 });
