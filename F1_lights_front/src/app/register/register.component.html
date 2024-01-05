@@ -1,1 +1,17 @@
-<p>register works!</p>
+<h2>Créer un compte</h2>
+
+<form [formGroup]="registerForm">
+
+    <label for="username">Username</label>
+    <input #username type="username" formControlName="username">
+
+    <label for="password">Password</label>
+    <input #password type="password" formControlName="password">
+
+    <label for="verifPwd">Verif Password</label>
+    <input #verifPwd type="verifPwd" formControlName="verifPwd">
+
+    <button (click)="register()">Valider</button>
+</form>
+
+<a style="text-decoration: underline; cursor: pointer; color: lightcoral;" (click)="goTo('login')">Login</a>

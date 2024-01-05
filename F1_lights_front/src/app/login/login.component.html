@@ -1,3 +1,5 @@
+<h2>Se connecter</h2>
+
 <form [formGroup]="loginForm">
 
     <label for="username">Username</label>
@@ -8,3 +10,5 @@
 
     <button (click)="login()">Valider</button>
 </form>
+
+<a style="text-decoration: underline; cursor: pointer; color: lightcoral;" (click)="goTo('register')">Register</a>

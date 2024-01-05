@@ -17,5 +17,4 @@ export class ScoreComponent {
   ngOnInit() {
     this.userService.getUsers();
   }
-
 }

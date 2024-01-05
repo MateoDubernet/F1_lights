@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Login } from '../model/login';
 import { AuthService } from '../service/authenticate.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +18,7 @@ export class LoginComponent {
 
   public loginForm: FormGroup;
 
-  constructor(private authService: AuthService) {
+  constructor(private authService: AuthService, private router: Router) {
     this.loginForm = this.setFormGroup(new Login());
   }
 
@@ -28,4 +29,7 @@ export class LoginComponent {
     this.authService.login(this.loginForm.value)
   }
 
+  public goTo(path: string){
+    this.router.navigate([path])
+  }
 }
