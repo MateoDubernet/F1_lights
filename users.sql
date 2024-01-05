@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `id_user` int NOT NULL AUTO_INCREMENT,
   `username` varchar(45) COLLATE utf8mb3_bin NOT NULL,
   `password` varchar(45) COLLATE utf8mb3_bin NOT NULL,
-  `best_score` float NOT NULL,
+  `best_score` float ,
   PRIMARY KEY (`id_user`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
 COMMIT;
