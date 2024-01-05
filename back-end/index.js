@@ -5,6 +5,7 @@ const bcrypt = require("bcrypt");
 const db = require("./database"); // Importez le fichier de connexion
 
 const app = express();
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.get("/", (req, res) => {
