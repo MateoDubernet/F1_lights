@@ -1,8 +1,14 @@
 const express = require("express");
-const app = express();
+require("dotenv").config();
 
+const db = require("./database"); // Importez le fichier de connexion
+
+const app = express();
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  db.query("SELECT * FROM users", (err, results) => {
+    if (err) throw err;
+    res.send(results);
+  });
 });
 
 const PORT = process.env.PORT || 3000;
