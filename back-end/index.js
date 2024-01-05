@@ -6,6 +6,12 @@ const db = require("./database"); // Importez le fichier de connexion
 
 const app = express();
 app.use(cors());
+app.use(
+  cors({
+    origin: "*", // Autorise uniquement les requêtes de ce domaine
+    methods: ["GET", "POST", "PUT", "DELETE"], // Autorise uniquement les méthodes GET et POST
+  })
+);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.get("/", (req, res) => {
