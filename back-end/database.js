@@ -1,10 +1,11 @@
 const mysql = require("mysql2");
 
 const connection = mysql.createConnection({
-  host: "localhost", // ou l'adresse de votre serveur MySQL
-  user: "root", // votre nom d'utilisateur MySQL
-  password: "", // votre mot de passe MySQL
-  database: "nom_de_votre_base_de_donnees", // le nom de votre base de données
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME,
+  port: process.env.DB_PORT,
 });
 
 connection.connect((error) => {
