@@ -11,6 +11,5 @@ export class AuthService {
 
     login(login: Login) {
         console.log(login);
-        
     }
 }

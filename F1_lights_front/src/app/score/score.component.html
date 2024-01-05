@@ -1,1 +1,16 @@
-<p>score works!</p>
+<table>
+    <tr>
+        <th>Score</th>
+        <th>Header</th>
+    </tr>
+
+    <div *ngFor="let user of users">
+        <table>
+    
+            <td>{{user.score}}</td>
+            <td>{{user.username}}</td>
+        </table>
+    </div>
+</table>
+
+

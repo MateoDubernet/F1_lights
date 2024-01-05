@@ -11,8 +11,8 @@ import { AuthService } from '../service/authenticate.service';
 export class LoginComponent {
 
   public setFormGroup = (dataItem: Login) => new FormGroup({
-    'userNameOrEmail': new FormControl('', Validators.required),
-    'password': new FormControl('', Validators.required),
+    'username': new FormControl(dataItem.username, Validators.required),
+    'password': new FormControl(dataItem.pwd, Validators.required),
   });
 
   public loginForm: FormGroup;

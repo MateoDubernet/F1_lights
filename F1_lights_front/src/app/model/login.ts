@@ -1,4 +1,4 @@
 export class Login {
-    public userNameOrEmail: string;
+    public username: string;
     public pwd: string;
-  }
+}
