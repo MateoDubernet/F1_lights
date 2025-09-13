@@ -1,0 +1,44 @@
+.navbar {
+  width: calc(100% - 40px);
+  margin: 10px auto;
+  background-color: #3498db;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+
+    li {
+      &.username {
+        font-weight: bold;
+        color: #fff;
+        margin-right: auto;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: underline;
+        font-weight: normal;
+        cursor: pointer;
+        transition: color 0.2s;
+
+        &:hover {
+          color: #ffcccb;
+        }
+      }
+
+      a.active-link {
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 2px solid #ffcccb; // souligne le lien actif
+      }
+    }
+  }
+}

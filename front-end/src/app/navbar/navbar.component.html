@@ -1,0 +1,16 @@
+<nav class="navbar" *ngIf="authService.isLoggedIn()">
+  <ul>
+    <li class="username">Bonjour, {{ username }}</li>
+    <li>
+      <a routerLink="/game" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+        Game
+      </a>
+    </li>
+    <li>
+      <a routerLink="/score" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+        Leaderboard
+      </a>
+    </li>
+    <li><a (click)="logout()">Déconnexion</a></li>
+  </ul>
+</nav>

@@ -1,0 +1,28 @@
+<div class="container">
+  <form [formGroup]="loginForm" (keydown.enter)="login()" class="login-form">
+
+    <h2>Se connecter</h2>
+
+    <!-- Username -->
+    <label for="username">Username</label>
+    <input type="text" formControlName="username">
+    <div class="error" *ngIf="form['username'].touched && form['username'].invalid">
+      Le nom d'utilisateur est requis
+    </div>
+
+    <!-- Password -->
+    <label for="password">Password</label>
+    <input type="password" formControlName="password">
+    <div class="error" *ngIf="form['password'].touched && form['password'].invalid">
+      Le mot de passe est requis
+    </div>
+
+    <!-- Erreur serveur -->
+    <div class="error" *ngIf="serverError">{{ serverError }}</div>
+
+    <button type="button" (click)="login()">Valider</button>
+
+    <a class="register-link" (click)="goTo('register')">Register</a>
+
+  </form>
+</div>

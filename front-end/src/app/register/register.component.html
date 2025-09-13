@@ -1,0 +1,35 @@
+<div class="container">
+  <form [formGroup]="registerForm" (keydown.enter)="register()" class="register-form">
+
+    <h2>Créer un compte</h2>
+
+    <!-- Username -->
+    <label for="username">Username</label>
+    <input type="text" formControlName="username">
+    <div class="error" *ngIf="form['username'].touched && form['username'].invalid">
+      Le nom d'utilisateur est requis
+    </div>
+    <div class="error" *ngIf="form['username'].errors?.['usernameTaken']">
+      Ce nom d'utilisateur est déjà utilisé
+    </div>
+
+    <!-- Password -->
+    <label for="password">Password</label>
+    <input type="password" formControlName="password">
+    <div class="error" *ngIf="form['password'].touched && form['password'].invalid">
+      Le mot de passe est requis
+    </div>
+
+    <!-- Verification Password -->
+    <label for="verifPassword">Confirmer le mot de passe</label>
+    <input type="password" formControlName="verifPassword">
+    <div class="error" *ngIf="(form['password'].touched || form['verifPassword'].touched) && registerForm.hasError('passwordsMismatch')">
+      Les mots de passe doivent être identiques
+    </div>
+
+    <button type="button" (click)="register()">Valider</button>
+
+    <a class="login-link" (click)="goTo('login')">Login</a>
+
+  </form>
+</div>
