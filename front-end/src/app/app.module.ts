@@ -10,7 +10,6 @@ import { ScoreComponent } from './score/score.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
-import { NotifierModule } from 'angular-notifier';
 
 @NgModule({
   declarations: [
@@ -25,25 +24,7 @@ import { NotifierModule } from 'angular-notifier';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule,
-    NotifierModule.withConfig({
-      position: {
-        horizontal: {
-          position: 'right',
-          distance: 12
-        },
-        vertical: {
-          position: 'top',
-          distance: 12,
-          gap: 10
-        }
-      },
-      behaviour: {
-        autoHide: 5000,
-        stacking: 4
-      },
-      theme: 'material'
-    })
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
