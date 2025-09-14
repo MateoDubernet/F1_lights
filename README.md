@@ -7,10 +7,10 @@
 - Leaderboard des scores
 
 ## Prérequis
-Node.js >= 18
-Angular CLI >= 15
-MySQL ou HeidiSQL
-npm
+- Node.js >= 18
+- Angular CLI >= 15
+- MySQL
+- npm
 
 ## Installation
 1. Cloner le projet
