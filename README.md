@@ -2,9 +2,9 @@
 
 ## Description
 ### Mini-application web pour :
-Inscription / Connexion utilisateur
-Jeu de réaction
-Leaderboard des scores
+- Inscription / Connexion utilisateur
+- Jeu de réaction
+- Leaderboard des scores
 
 ## Prérequis
 Node.js >= 18
