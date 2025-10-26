@@ -3,10 +3,8 @@
 ## Contexte
 
 ### Description
-Mini-application web pour :
-- Inscription / Connexion utilisateur
-- Jeu de réaction
-- Leaderboard des scores
+Il s'agit d'un projet réaliser durant mon alternance, il à été réaliser en groupe dans le cadre d'un devoir maison. 
+Cette application web est un mini-jeu de réaction avec sauvegardes des scores et création de compte.
 
 ### Notes
 - Backend doit tourner avant le frontend
