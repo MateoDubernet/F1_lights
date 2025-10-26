@@ -16,9 +16,9 @@ Mini-application web pour :
 ## Prérequis
 
 - Node.js >= 18
+- npm
 - Angular CLI >= 15
 - MySQL
-- npm
 
 ---
 
