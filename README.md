@@ -53,7 +53,6 @@ Dans le dossier back-end :
 - Configurer .env avec les bonnes valeurs
 - Charger le fichier : **f1_lights_bdd.sql** dans la base de données
 
-
 ### 4. Lancer l’application
 Dans le dossiers back-end :
 ```bash
