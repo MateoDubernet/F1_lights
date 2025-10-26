@@ -49,8 +49,7 @@ ou
 ```
 
 ### 3. Connexion à la base de données
-Dans le dossier back-end :
-- Configurer .env avec les bonnes valeurs
+- Dans le dossier back-end configurer le fichier .env avec les bonnes valeurs
 - Charger le fichier : **f1_lights_bdd.sql** dans la base de données MYSQL
 
 ### 4. Lancer l’application
