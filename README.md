@@ -48,24 +48,11 @@ ou
     npm install --force
 ```
 
-### 3. Configuration du Back
+### 3. Connexion à la base de données
 Dans le dossier back-end :
-1. Créer base MySQL f1_lights et table users :
-CREATE TABLE users (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  username VARCHAR(50) NOT NULL UNIQUE,
-  password VARCHAR(255) NOT NULL,
-  best_score INT DEFAULT NULL
-);
+- Configurer .env avec les bonnes valeurs
+- Charger le fichier : **f1_lights_bdd.sql** dans la base de données
 
-
-2. Configurer .env dans back-end :
-DB_HOST=localhost
-DB_USER=root
-DB_PASS=ton_mot_de_passe
-DB_NAME=f1_lights
-DB_PORT=3306
-PORT=3000
 
 ### 4. Lancer l’application
 Dans le dossiers back-end :
