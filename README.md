@@ -3,7 +3,7 @@
 ## Contexte
 
 ### Description
-Il s'agit d'un projet réaliser durant mon alternance, il à été réaliser en groupe dans le cadre d'un devoir maison. 
+Il s'agit d'un projet réaliser durant mon alternance, il à été réaliser en groupe dans le cadre d'un devoir maison.\
 Cette application web est un mini-jeu de réaction avec sauvegardes des scores et création de compte.
 
 ### Notes
