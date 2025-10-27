@@ -4,6 +4,8 @@
 
 ### Description
 Il s'agit d'un projet réaliser durant mon alternance, il à été réaliser en groupe dans le cadre d'un devoir maison.\
+Le projet utilise Angular pour le frontend et Express.js pour le backend.
+
 Cette application web est un mini-jeu de réaction avec sauvegardes des scores et création de compte.
 
 ### Notes
