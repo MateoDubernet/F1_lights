@@ -3,10 +3,8 @@
 ## Contexte
 
 ### Description
-Il s'agit d'un projet réaliser durant mon alternance, il à été réaliser en groupe dans le cadre d'un devoir maison.\
-Le projet utilise Angular pour le frontend et Express.js pour le backend.
-
-Cette application web est un mini-jeu de réaction avec sauvegardes des scores et création de compte.
+Il s'agit d'un projet utilisant Angular pour le frontend et Express.js pour le backend, il a été réaliser en groupe durant mon alternance dans le cadre d'un devoir maison.\
+Le projet est une application web consistant en un mini-jeu de réaction avec sauvegardes des scores et création de compte.
 
 ### Notes
 - Backend doit tourner avant le frontend
