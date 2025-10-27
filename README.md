@@ -18,7 +18,6 @@ Le projet est une application web consistant en un mini-jeu de réaction avec sa
 ---
 
 ## Installation & Lancement
-**Important :** Le backend doit être lancer avant le frontend.
 
 ### 1. Cloner le projet
 ```bash
@@ -26,8 +25,8 @@ Le projet est une application web consistant en un mini-jeu de réaction avec sa
     cd <nom-du-dossier>
 ```
 
-- Ouvrir deux terminals, un pour le back et un autre pour le front.
-- Une fois ouvert se mettre sur les dossiers back-end et front-end :
+- Ouvrir deux terminals, un pour la partie back-end et un autre pour la partie front-end.
+- Se mettre sur les dossiers :
 ```bash
     cd ./back-end
 ```
@@ -36,7 +35,7 @@ Le projet est une application web consistant en un mini-jeu de réaction avec sa
 ```
 
 ### 2. Installer les dépendances (back et front)
-Dans les dossiers back-end et front-end :
+Dans les deux terminals lancer la command :
 ```bash
     npm install
 ```
@@ -50,12 +49,14 @@ ou
 - Charger le fichier : **f1_lights_bdd.sql** dans la base de données MYSQL
 
 ### 4. Lancer l’application
-Dans le dossiers back-end :
+**Important :** Le backend doit être lancer avant le frontend.
+
+Dans le terminal pour back-end :
 ```bash
     npm start
 ```
 
-Dans le dossiers front-end :
+Dans le terminal pour front-end :
 ```bash
     ng serve
 ```
