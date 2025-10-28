@@ -25,6 +25,7 @@ Le projet est une application web consistant en un mini-jeu de réaction avec sa
     cd <nom-du-dossier>
 ```
 
+### 2. Accéder aux différentes parties
 - Ouvrir deux terminals, un pour la partie back-end et un autre pour la partie front-end.
 - Se mettre sur les dossiers :
 ```bash
@@ -34,7 +35,7 @@ Le projet est une application web consistant en un mini-jeu de réaction avec sa
     cd ./front-end
 ```
 
-### 2. Installer les dépendances (back et front)
+### 3. Installer les dépendances (back et front)
 Dans les deux terminals lancer la command :
 ```bash
     npm install
@@ -44,11 +45,11 @@ ou
     npm install --force
 ```
 
-### 3. Connexion à la base de données
+### 4. Connexion à la base de données
 - Dans le dossier back-end configurer le fichier .env avec les bonnes valeurs
 - Charger le fichier : **f1_lights_bdd.sql** dans la base de données MYSQL
 
-### 4. Lancer l’application
+### 5. Lancer l’application
 **Important :** Le backend doit être lancer avant le frontend.
 
 Dans le terminal pour back-end :
