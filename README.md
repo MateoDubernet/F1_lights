@@ -10,9 +10,8 @@ Le projet est une application web consistant en un mini-jeu de réaction avec sa
 
 ## Prérequis
 
-- Node.js >= 18
-- npm
-- Angular CLI >= 15
+- Node.js et npm installés
+- Angular CLI installé globalement (npm install -g @angular/cli)
 - MySQL
 
 ---
