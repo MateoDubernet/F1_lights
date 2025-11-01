@@ -20,7 +20,7 @@ Le projet est une application web consistant en un mini-jeu de réaction avec sa
 
 ### 1. Cloner le projet
 ```bash
-    git clone <url-du-repo>
+    git clone https://github.com/MateoDubernet/F1_lights.git
 ```
 
 ### 2. Accéder aux différentes parties
