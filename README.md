@@ -29,12 +29,12 @@ Le projet est une application web consistant en un mini-jeu de réaction avec sa
 ```
 - Depuis le dossier **F1_lights** ouvrir deux terminals, un pour la partie back-end et un autre pour la partie front-end.
 
-- Accèder à la partie back-end depuis le premier terminal :
+- Accèder à la partie **back-end** depuis le premier terminal :
 ```bash
     cd ./back-end
 ```
 
-- Accèder à la partie front-end depuis le deuxième terminal :
+- Accèder à la partie **front-end** depuis le deuxième terminal :
 ```bash
     cd ./front-end
 ```
