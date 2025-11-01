@@ -6,6 +6,7 @@ import { GameComponent } from './game/game.component';
 import { ScoreComponent } from './score/score.component';
 
 const routes: Routes = [
+  {path: "", redirectTo: 'login', pathMatch: 'full'},
   {path: "login", component: LoginComponent},
   {path: "register", component: RegisterComponent},
   {path: "game", component: GameComponent},
