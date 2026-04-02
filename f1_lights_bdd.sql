@@ -16,7 +16,7 @@
 
 
 -- Listage de la structure de la base pour f1_lights
-CREATE DATABASE IF NOT EXISTS `f1_lights` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_uca1400_ai_ci */;
+CREATE DATABASE IF NOT EXISTS `f1_lights` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
 USE `f1_lights`;
 
 -- Listage de la structure de table f1_lights. users

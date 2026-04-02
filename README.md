@@ -1,73 +1,44 @@
-# F1 Lights
+# F1 Lights - Mini-jeu de Réaction
 
-## Contexte
+## Présentation
+Ce projet est une application web fullstack réalisée en groupe durant mon alternance. Il s'agit d'un mini-jeu de réflexes avec sauvegardes des scores et création de compte.
 
-### Description
-Il s'agit d'un projet utilisant Angular pour le frontend et Express.js pour le backend, il a été réaliser en groupe durant mon alternance dans le cadre d'un devoir maison.\
-Le projet est une application web consistant en un mini-jeu de réaction avec sauvegardes des scores et création de compte.
-
----
-
-## Prérequis
-
-- Node.js et npm installés
-- Angular CLI installé globalement (`npm install -g @angular/cli`)
-- MySQL
+### Architecture :
+**Frontend** : Angular (Interface interactive, Gestion des états du jeu et des chronomètres).
+**Backend** : Express.js (API REST, authentification et gestion des scores).
+**Base de données** : MySQL (Persistance des utilisateurs et du leaderboard).
+**Infrastructure** : Docker & Docker Compose.
 
 ---
 
-## Installation & Lancement
-
-### 1. Cloner le projet
+## Installation et Lancement
+### 1. Clonage du dépôt
 ```bash
     git clone https://github.com/MateoDubernet/F1_lights.git
 ```
 
-### 2. Aller sur le projet
-Depuis le dossier **F1_lights** ouvrir deux terminals, un pour la partie back-end et un autre pour la partie front-end.
+### 2. Lancement (Docker)
+**Prérequis :** [Docker Desktop](https://www.docker.com/products/docker-desktop) installé et lancé.
 
-- Accèder à la partie **back-end** depuis le premier terminal :
 ```bash
-    cd ./back-end
+    cd ./F1_lights
+    docker-compose up --build
 ```
 
-- Accèder à la partie **front-end** depuis le deuxième terminal :
-```bash
-    cd ./front-end
-```
+### 3. Accès
+- Interface Client : http://localhost (Port 80)
+- API Backend : http://localhost:3000
 
-### 3. Installer les dépendances (back et front)
-Dans les deux terminals lancer la command :
-```bash
-    npm install
-```
-ou
-```bash
-    npm install --force
-```
-
-### 4. Connexion à la base de données
-- Dans le dossier back-end configurer le fichier .env avec les bonnes valeurs
-- Charger le fichier : **f1_lights_bdd.sql** dans la base de données MYSQL
-
-### 5. Lancer l’application
-**Important :** Le backend doit être lancer avant le frontend.
-
-Dans le terminal pour back-end :
-```bash
-    npm start
-```
-
-Dans le terminal pour front-end :
-```bash
-    ng serve
-```
+[!IMPORTANT]
+Assurez-vous que les ports 80 et 8080 ne sont pas déjà utilisés par une autre application sur votre machine avant de lancer le conteneur.
 
 ---
 
 ## Fonctionnalités
-1. Inscription : nom d’utilisateur unique + mot de passe (confirmation requise)
-2. Connexion : nom d’utilisateur + mot de passe
-3. Jeu : cliquer sur **Start Game**, cliquer sur le carré au bon moment → meilleur score enregistré
-4. Leaderboard : accéder à la page scores pour voir les meilleurs joueurs
-5. Navigation : barre de navigation avec liens Game, Leaderboard, Déconnexion. Nom utilisateur affiché en gras
+1. Système d'Authentification : Inscription avec vérification de mot de passe et connexion sécurisée.
+
+2. Le Jeu : Cliquez sur Start Game, attendez l'extinction des feux et réagissez le plus vite possible.
+
+3. Leaderboard : Sauvegarde automatique de votre meilleur temps et consultation du classement mondial des joueurs.
+
+4. Expérience Utilisateur : Interface réactive avec barre de navigation dynamique (affiche l'utilisateur connecté).
