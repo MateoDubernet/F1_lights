@@ -26,8 +26,9 @@ Ce projet est une application web fullstack réalisée en groupe durant mon alte
 ```
 
 ### 3. Accès
-- Interface Client : http://localhost (Port 80)
-- API Backend : http://localhost:3000
+- **Interface Client** : http://localhost (Port 80)
+
+- **API Backend** : http://localhost:3000
 
 [!IMPORTANT]
 Assurez-vous que les ports 80 et 3000 ne sont pas déjà utilisés par une autre application sur votre machine avant de lancer le conteneur.
@@ -35,10 +36,10 @@ Assurez-vous que les ports 80 et 3000 ne sont pas déjà utilisés par une autre
 ---
 
 ## Fonctionnalités
-1. Système d'Authentification : Inscription avec vérification de mot de passe et connexion sécurisée.
+1. **Système d'Authentification** : Inscription avec vérification de mot de passe et connexion sécurisée.
 
-2. Le Jeu : Cliquez sur Start Game, attendez l'extinction des feux et réagissez le plus vite possible.
+2. **Le Jeu** : Cliquez sur Start Game, attendez l'extinction des feux et réagissez le plus vite possible.
 
-3. Leaderboard : Sauvegarde automatique de votre meilleur temps et consultation du classement mondial des joueurs.
+3. **Leaderboard** : Sauvegarde automatique de votre meilleur temps et consultation du classement mondial des joueurs.
 
-4. Expérience Utilisateur : Interface réactive avec barre de navigation dynamique (affiche l'utilisateur connecté).
+4. **Expérience Utilisateur** : Interface réactive avec barre de navigation dynamique (affiche l'utilisateur connecté).
