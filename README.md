@@ -3,11 +3,10 @@
 ## Présentation
 Ce projet est une application web fullstack réalisée en groupe durant mon alternance. Il s'agit d'un mini-jeu de réflexes avec sauvegardes des scores et création de compte.
 
-### Architecture
-**Frontend** : Angular (Interface interactive, Gestion des états du jeu et des chronomètres).
-**Backend** : Express.js (API REST, authentification et gestion des scores).
-**Base de données** : MySQL (Persistance des utilisateurs et du leaderboard).
-**Infrastructure** : Docker & Docker Compose.
+### Stack Technique
+- **Angular**.
+- **Expressjs**.
+- **Docker**.
 
 ---
 
@@ -20,18 +19,16 @@ Ce projet est une application web fullstack réalisée en groupe durant mon alte
 ### 2. Lancement (Docker)
 **Prérequis :** [Docker Desktop](https://www.docker.com/products/docker-desktop) installé et lancé.
 
+[!IMPORTANT]
+Assurez-vous que les ports 80 et 3000 ne sont pas déjà utilisés par une autre application sur votre machine avant de lancer le conteneur.
+
 ```bash
     cd ./F1_lights
     docker-compose up --build
 ```
 
 ### 3. Accès
-- **Interface Client** : http://localhost (Port 80)
-
-- **API Backend** : http://localhost:3000
-
-[!IMPORTANT]
-Assurez-vous que les ports 80 et 3000 ne sont pas déjà utilisés par une autre application sur votre machine avant de lancer le conteneur.
+Ouvrir un navigateur web et aller à l'adresse: http://localhost
 
 ---
 
