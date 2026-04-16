@@ -4,10 +4,9 @@
 Ce projet est une application web fullstack réalisée en groupe durant mon alternance. Il s'agit d'un mini-jeu de réflexes avec sauvegardes des scores et création de compte.
 
 ### Stack Technique
-- **Angular**.
-- **Expressjs**.
-- **Docker**.
-
+- **Angular**
+- **Expressjs**
+- **Docker**
 ---
 
 ## Installation et Lancement
